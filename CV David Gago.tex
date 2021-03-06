@@ -1,0 +1,195 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans,colorlinks=true, urlcolor=blue]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}  
+\usepackage{url}                         % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{David}{Gago}
+\title{Software Developer,\newline Msc in Computer Science}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+351)~917900720}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{david.opg@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{david-gago}                        % optional, remove / comment the line if not wanted
+%\social[Research gate]{Gonçalo Sousa Mendes}                             % optional, remove / comment the line if not wanted
+\social[github]{dooping}      
+%\social[bitbucket]{Dooping}                            % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Summary}
+Fast-learning and problem-solving Software Engineer with 3 years of experience in Full-Stack development, DevOps, Mobile development and Analytics for various clients and projects.
+
+\section{Experience}
+
+\cventry{May2019--Present}{Software Developer}{Deimos Engenharia}{Lisbon}{}
+{\begin{itemize}
+		\item Full Stack Developer (Angular, Java Spring Boot, Python);
+		\item DevOps Developer (Docker, Bamboo, Elasticsearch, Grafana);
+\end{itemize}}
+
+\cventry{Aug2015--Dec2015}{Software Developer}{Nextway Group}{Lisbon}{}
+{\begin{itemize}
+		\item Mobile Developer (iOS \& Android);
+		\item Web Developer (AngularJS, HTML, CSS)
+\end{itemize}}
+
+\cventry{Mar2015--Jul2015}{Academic Internship}{Nextway Group}{Lisbon}{}
+{\begin{itemize}
+		\item Mobile Developer (iOS \& Android);
+		\item Full Stack Developer (Entity Framework, ASP.NET, AngularJS)
+\end{itemize}}
+
+\section{Education}
+\cventry{Sep2016--Mar2018}{Unfinished Masters in Computer Science}{Faculdade de Ciências e Tecnologias, Universidade Nova de Lisboa}{Lisbon}{}{Main Subjects: Security, Cloud Computing, Machine Learning, Mobile and Ubiquitous programming.}  % arguments 3 to 6 can be left empty
+
+\cventry{Mar2013--Jul2016}{Bachelor of Computer Science}{Faculdade de Ciências e Tecnologias, Universidade Nova de Lisboa}{Lisbon}{\textit{GPA: 16}}{Main Subjects: Distributed Systems, Algorithms and Data structures, Artificial Intelligence, Databases.}
+
+%\cventry{Sep2006--Dec2013}{Master of Electrical and Computer Engineering}{Faculdade de Ciências e Tecnologias, Universidade Nova de Lisboa}{Lisbon}{}{Not Completed}
+
+%\section{Master thesis}
+%\cvitem{Title}{\emph{Invariant-Driven Automatic Testing}}
+%\cvitem{Supervisors}{Prof. Dr. Carla Ferreira}
+%\cvitem{Description}{
+%	Ensuring correctness of applications in hybrid databases is a challenging task, as data integrity invariants may be broken with concurrent operations.
+%	The goal of the thesis is to develop a testing tool that, from a service specification, generates tests trying to break the invariants.
+%}
+
+\section{Volunteer work}
+
+\cventry{26Nov2016}{FCT Coding Fest}{Faculdade de Ciencias e Tecnologia}{}{}
+{Surveillance of the contest}
+
+\section{Programming Languages}
+\cvitem{Proeficient}{Java, Typescript, SQL}
+\cvitem{Intermediate }{Scala, JavaScript, Python, HTML, Objective-C} 
+\cvitem{Familiar with}{C\#, C, Assembly, Ocaml, Delphi, \LaTeX}
+
+\section{Skills}
+\cvitem{Technologies}{Spring Boot, Angular, Docker, Elasticsearch, Akka Framework, Entity Framework, AndroidSDK, ReactJS, JavaEE, Java RMI, Arduino, REST, SOAP, Git}
+\cvitem{Security}{Good knowledge about security threats and countermeasures, Symmetric cryptography, Asymmetric cryptography}
+\cvitem{Methodologies}{Scrum}
+
+\newpage
+
+\section{Languages}
+\cvitem{Portuguese}{Native}
+\cvitemwithcomment{English}{C2}{European language levels}
+\cvitemwithcomment{Spanish}{B1}{European language levels}
+\cvitemwithcomment{Polish}{A1}{European language levels}
+
+%\section{Development Tools}
+%\cvitem{IDE}{ Visual Studio Code, IntelliJ IDEA, Eclipse, Xcode}
+%\cvitem{CVS}{Git}
+
+\section{Projects}
+\cvitem{\href{https://geomar.hidrografico.pt}{Hidrografico$^+$}}{
+	\begin{itemize}
+		\item Web Application for Instituto Hidrográfico to showcase and commercialize geographic data;
+		\item Created and developed frontend project in Angular;
+		\item Created and fully developed backend using Java Spring Boot, PostgreSQL, Redis and the Netflix Stack (for microservice coordination);
+		\item Developed integration with services: GeoNetwork, GeoServer, ncWMS and Redmine;
+		\item Configured and integrated Gluu for authentication and authorization using Spring Security and OpenID;
+		\item Created docker compose configuration files to easily deploy the project locally and in all other environments;
+		\item Led the development of monitoring services for all parts of the system with ELK Stack;
+		\item Led the development of the backoffice service for adding new content;
+	\end{itemize}
+}
+\cvitem{NextGEOSS Analytics}{
+	\begin{itemize}
+		\item Monitoring the performance and health of Pilot Application runs integrated with NextGEOSS;
+		\item Technologies used: ELK Stack and Grafana;
+		\item Created several data ingestion pipelines for Filebeat and Metricbeat data in Logstash;
+		\item Developed new dashboards in Grafana for monitoring different parts of the system.	
+	\end{itemize}
+}
+\cvitem{MarineEO - Phase 2}{
+\begin{itemize}
+	\item Web Application for monitoring the sea and helping navigation in the north pole;
+	\item Developed frontend in Angular;
+	\item Developed backend in Python;
+	\item Developed integration with Geoserver and Atlassian Jira.
+\end{itemize}
+}
+\cvitem{Services4EO ESSTI}{
+\begin{itemize}
+	\item Web Application for Ethiopian Space Science and Technology Institute to monitor land and water bodies;
+	\item Developed frontend in Angular;
+	\item Created and developed microservice to support frontend and backend, using Java Spring Boot and MongoDB;
+	\item Created docker compose configuration files for deploying.
+\end{itemize}
+}
+\cvitem{\href{https://github.com/Dooping/MyLand}{My Land} (Personal)}{
+	\begin{itemize}
+		\item Android App about scheduling tasks for farmlands;
+		\item Usability focus by using Mapbox and intuitive controls;
+		\item High level of customization;
+		\item APK available in GitHub page.
+	\end{itemize}
+}
+
+\section{Interests}
+\cvitem{Reading}{Mostly fantasy, although I also like to read technical books about different programming languages and frameworks}
+\cvitem{Programming}{Even though it is also my job, I like to program in my free time to learn new languages and develop personal projects}
+
+%\section{Certifications}
+%\cvitem{Lightbend}{
+%	\begin{itemize}
+%		\item \href{https://academy.lightbend.com/certificates/09e1c30beff148dab826c2a7aceabcef}{Lightbend Scala Language - Professional}
+%		\item \href{https://academy.lightbend.com/certificates/f3a78ee85b564b07b4372d36d467c311}{Lightbend Akka for Scala - Professional}
+%		\item \href{https://academy.lightbend.com/certificates/ec19bf7ed96643a493683baa0232800c}{Lightbend Akka Cluster - Fundamentals}
+%		\item \href{https://academy.lightbend.com/certificates/b71018f6cf2e4dd3b6fe84d16656f895}{Reactive Architecture(1): Introduction to Reactive Systems}
+%		\item \href{https://academy.lightbend.com/certificates/6fa838678f3247be92d0f908da49cc02}{Reactive Architecture(2): Domain Driven Design}
+%	\end{itemize}
+%}
+%\cvitem{Udemy}{
+%	\begin{itemize}
+%		\item \href{https://www.udemy.com/certificate/UC-2S0TIZOG/}{The Ultimate Hands-On Hadoop - Tame your Big Data!}
+%		\item \href{https://www.udemy.com/certificate/UC-09AP0E3D/}{Complete Elasticsearch Masterclass with Logstash and Kibana}
+%		\item \href{https://www.udemy.com/certificate/UC-WHTY9S3L/}{Atlassian Bamboo from Beginner to Advanced!}
+%	\end{itemize}
+%}
+
+\end{document}
+
+
+%% end of file `template.tex'.
