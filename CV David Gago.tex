@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans,colorlinks=true, urlcolor=blue]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper,sans,colorlinks=true, urlcolor=blue]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -28,7 +28,7 @@
 
 % personal data
 \name{David}{Gago}
-\title{Software Developer,\newline Msc in Computer Science}                               % optional, remove / comment the line if not wanted
+\title{Software Developer,\newline PGDip in Computer Science}                               % optional, remove / comment the line if not wanted
 %\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{(+351)~917900720}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
@@ -40,7 +40,8 @@
 \social[github]{dooping}      
 %\social[bitbucket]{Dooping}                            % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[80pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
 
 \makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
 %   to redefine the bibliography heading string ("Publications")
@@ -53,15 +54,20 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
+%-----       resume      ----------------------------------------------------------
 \makecvtitle
 
 \section{Summary}
-Fast-learning and problem-solving Software Engineer with 3 years of experience in Full-Stack development, DevOps, Mobile development and Analytics for various clients and projects.
+Fast-learning and problem-solving Software Engineer with experience in Full-Stack development, DevOps, Mobile development and Analytics for various clients and projects.
 
 \section{Experience}
 
-\cventry{May2019--Present}{Software Developer}{Deimos Engenharia}{Lisbon}{}
+\cventry{Aug2021--Apr2022}{Software Developer}{Pipedrive}{Lisbon}{}
+{\begin{itemize}
+		\item Backend Developer (NodeJS, PHP, Kubernetes, Elasticsearch, Grafana);
+\end{itemize}}
+
+\cventry{May2019--Jul2021}{Software Developer}{Deimos Engenharia}{Lisbon}{}
 {\begin{itemize}
 		\item Full Stack Developer (Angular, Java Spring Boot, Python);
 		\item DevOps Developer (Docker, Bamboo, Elasticsearch, Grafana);
@@ -80,9 +86,9 @@ Fast-learning and problem-solving Software Engineer with 3 years of experience i
 \end{itemize}}
 
 \section{Education}
-\cventry{Sep2016--Mar2019}{Postgraduate in Computer Science}{Faculdade de Ciências e Tecnologias, Universidade Nova de Lisboa}{Lisbon}{}{Main Subjects: Security, Cloud Computing, Machine Learning, Mobile and Ubiquitous programming.}  % arguments 3 to 6 can be left empty
+\cventry{Sep2016--Mar2019}{Postgraduate in Computer Science}{NOVA School of Science and Technology}{NOVA University Lisbon}{}{Main Subjects: Security, Distributed Systems Algorithms, Cloud Computing, Machine Learning, Mobile and Ubiquitous programming.}  % arguments 3 to 6 can be left empty
 
-\cventry{Mar2013--Jul2016}{Bachelor of Computer Science}{Faculdade de Ciências e Tecnologias, Universidade Nova de Lisboa}{Lisbon}{\textit{GPA: 16}}{Main Subjects: Distributed Systems, Algorithms and Data structures, Artificial Intelligence, Databases.}
+\cventry{Mar2013--Jul2016}{Bachelor of Computer Science}{NOVA School of Science and Technology}{NOVA University Lisbon}{\textit{GPA: 16}}{Main Subjects: Distributed Systems, Algorithms and Data structures, Artificial Intelligence, Databases.}
 
 %\cventry{Sep2006--Dec2013}{Master of Electrical and Computer Engineering}{Faculdade de Ciências e Tecnologias, Universidade Nova de Lisboa}{Lisbon}{}{Not Completed}
 
@@ -94,28 +100,12 @@ Fast-learning and problem-solving Software Engineer with 3 years of experience i
 %	The goal of the thesis is to develop a testing tool that, from a service specification, generates tests trying to break the invariants.
 %}
 
-\section{Volunteer work}
-
-\cventry{26Nov2016}{FCT Coding Fest}{Faculdade de Ciencias e Tecnologia}{}{}
-{Surveillance of the contest}
-
 \section{Programming Languages}
-\cvitem{Proeficient}{Java, Typescript, SQL}
-\cvitem{Intermediate }{Scala, JavaScript, Python, HTML, Objective-C} 
-\cvitem{Familiar with}{C\#, C, Assembly, Ocaml, Delphi, \LaTeX}
-
-\section{Skills}
-\cvitem{Technologies}{Spring Boot, Angular, Docker, Elasticsearch, Akka Framework, Entity Framework, AndroidSDK, ReactJS, JavaEE, Java RMI, Arduino, REST, SOAP, Git}
-\cvitem{Security}{Good knowledge about security threats and countermeasures, Symmetric cryptography, Asymmetric cryptography}
-\cvitem{Methodologies}{Scrum}
+\cvitem{Proficient}{Java, Typescript, SQL, Scala}
+\cvitem{Intermediate }{Kotlin, JavaScript, Python, Objective-C} 
+\cvitem{Familiar with}{C\#, C, Assembly, Ocaml, Delphi, PHP, \LaTeX}
 
 \newpage
-
-\section{Languages}
-\cvitem{Portuguese}{Native}
-\cvitemwithcomment{English}{C2}{European language levels}
-\cvitemwithcomment{Spanish}{B1}{European language levels}
-\cvitemwithcomment{Polish}{A1}{European language levels}
 
 %\section{Development Tools}
 %\cvitem{IDE}{ Visual Studio Code, IntelliJ IDEA, Eclipse, Xcode}
@@ -166,28 +156,61 @@ Fast-learning and problem-solving Software Engineer with 3 years of experience i
 		\item APK available in GitHub page.
 	\end{itemize}
 }
+\cvitem{\href{https://www.pipedrive.com}{Pipedrive}}{
+	\begin{itemize}
+		\item CRM with Kanban-style pipelines;
+		\item Technologies used: JavaScript, TypeScript, PHP, Elasticsearch, Prometheus;
+		\item Helped improve personalized search, using A/B Testing for confirming improvements;
+		\item Applied Horizontal Pod Autoscaling to Login microservice as a response to a DDoS Attack;
+		\item Developed dashboards in Grafana to monitor different parts of the system.
+	\end{itemize}
+}
+
+\newpage
+
+\section{Skills}
+\cvitem{Technologies}{Spring Boot, Akka Framework, Angular, Docker, Android, Elasticsearch, NodeJS, Entity Framework, ReactJS, JavaEE, Java RMI, Arduino, REST, SOAP, Git, HTML}
+\cvitem{Security}{Knowledge about security threats and countermeasures, Symmetric/Asymmetric cryptography, Partial encryption}
+\cvitem{Methodologies}{Scrum, Kanban}
+
+\section{Languages}
+\cvitem{Portuguese}{Native}
+\cvitemwithcomment{English}{C2}{European language levels}
+\cvitemwithcomment{Spanish}{B1}{European language levels}
+\cvitemwithcomment{Polish}{A1}{European language levels}
 
 \section{Interests}
 \cvitem{Reading}{Mostly fantasy, although I also like to read technical books about different programming languages and frameworks}
 \cvitem{Programming}{Even though it is also my job, I like to program in my free time to learn new languages and develop personal projects}
 
-%\section{Certifications}
-%\cvitem{Lightbend}{
-%	\begin{itemize}
-%		\item \href{https://academy.lightbend.com/certificates/09e1c30beff148dab826c2a7aceabcef}{Lightbend Scala Language - Professional}
-%		\item \href{https://academy.lightbend.com/certificates/f3a78ee85b564b07b4372d36d467c311}{Lightbend Akka for Scala - Professional}
-%		\item \href{https://academy.lightbend.com/certificates/ec19bf7ed96643a493683baa0232800c}{Lightbend Akka Cluster - Fundamentals}
-%		\item \href{https://academy.lightbend.com/certificates/b71018f6cf2e4dd3b6fe84d16656f895}{Reactive Architecture(1): Introduction to Reactive Systems}
-%		\item \href{https://academy.lightbend.com/certificates/6fa838678f3247be92d0f908da49cc02}{Reactive Architecture(2): Domain Driven Design}
-%	\end{itemize}
-%}
-%\cvitem{Udemy}{
-%	\begin{itemize}
-%		\item \href{https://www.udemy.com/certificate/UC-2S0TIZOG/}{The Ultimate Hands-On Hadoop - Tame your Big Data!}
-%		\item \href{https://www.udemy.com/certificate/UC-09AP0E3D/}{Complete Elasticsearch Masterclass with Logstash and Kibana}
-%		\item \href{https://www.udemy.com/certificate/UC-WHTY9S3L/}{Atlassian Bamboo from Beginner to Advanced!}
-%	\end{itemize}
-%}
+\section{Volunteer work}
+
+\cventry{26Nov2016}{FCT Coding Fest}{Faculdade de Ciencias e Tecnologia}{}{}
+{Surveillance of the contest}
+
+\section{Certifications}
+\cvitem{Lightbend}{
+	\begin{itemize}
+		\item \href{https://academy.lightbend.com/certificates/09e1c30beff148dab826c2a7aceabcef}{Lightbend Scala Language - Professional}
+		\item \href{https://academy.lightbend.com/certificates/f3a78ee85b564b07b4372d36d467c311}{Lightbend Akka for Scala - Professional}
+		\item \href{https://academy.lightbend.com/certificates/ec19bf7ed96643a493683baa0232800c}{Lightbend Akka Cluster - Fundamentals}
+		\item \href{https://academy.lightbend.com/certificates/b71018f6cf2e4dd3b6fe84d16656f895}{Reactive Architecture(1): Introduction to Reactive Systems}
+		\item \href{https://academy.lightbend.com/certificates/6fa838678f3247be92d0f908da49cc02}{Reactive Architecture(2): Domain Driven Design}
+		\item \href{https://academy.lightbend.com/certificates/211d95e52fca4313874f3c19cc7d710c}{Reactive Architecture(3): Reactive Microservices}
+	\end{itemize}
+}
+\cvitem{Udemy}{
+	\begin{itemize}
+		\item \href{https://www.udemy.com/certificate/UC-7185b476-2f04-4db6-ae1b-adef7bd012cb/}{Akka Essentials with Scala | Rock the JVM}
+		\item \href{https://www.udemy.com/certificate/UC-486dc64e-2e26-4f42-ade9-9779269bcd03/}{Akka Persistence with Scala | Rock the JVM}
+		\item \href{https://www.udemy.com/certificate/UC-71307a1b-1044-42e3-8f3b-501bc324cd0c/}{Akka Streams with Scala | Rock the JVM}
+		\item \href{https://www.udemy.com/certificate/UC-434c31cd-bf26-4690-987d-e8e01f610da4//}{Akka HTTP with Scala | Rock the JVM}
+		\item \href{https://www.udemy.com/certificate/UC-434c31cd-bf26-4690-987d-e8e01f610da4/}{Akka HTTP with Scala | Rock the JVM}
+		\item \href{https://www.udemy.com/certificate/UC-2S0TIZOG/}{The Ultimate Hands-On Hadoop - Tame your Big Data!}
+		\item \href{https://www.udemy.com/certificate/UC-09AP0E3D/}{Complete Elasticsearch Masterclass with Logstash and Kibana}
+		\item \href{https://www.udemy.com/certificate/UC-WHTY9S3L/}{Atlassian Bamboo from Beginner to Advanced!}
+	\end{itemize}
+}
 
 \end{document}
 
